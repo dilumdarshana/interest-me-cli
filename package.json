@@ -17,6 +17,10 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dilumdarshana/interest-me-cli"
+  },
   "scripts": {
     "build": "esbuild --bundle src/index.ts --platform=node --outfile=dist/index.js --packages=external",
     "link-cli": "(yarn --global unlink practice-cli || true) && chmod +x ./dist/index.js && yarn --global link practice-cli",
