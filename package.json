@@ -1,6 +1,6 @@
 {
   "name": "practice-cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Calculator for interest for a given amount",
   "keywords": [
     "typescript",
@@ -10,19 +10,24 @@
   "author": "Dilum Darshana <dilum.dar@gmail.com>",
   "license": "MIT",
   "bin": {
-    "practice": "./dist/index.js"
+    "interestme": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "build": "esbuild --bundle src/index.ts --platform=node --outfile=dist/index.js --packages=external",
     "link-cli": "(yarn --global unlink practice-cli || true) && chmod +x ./dist/index.js && yarn --global link practice-cli",
     "dev": "tsc -w",
-    "release": "pnpm run ci && changeset publish"
+    "publish": "np"
   },
   "devDependencies": {
     "@types/figlet": "^1.5.8",
     "@types/node": "^22.5.4",
+    "esbuild": "^0.23.1",
+    "np": "^10.0.7",
     "typescript": "^5.5.4"
   },
   "dependencies": {
