@@ -6,13 +6,15 @@
       "es2023"
     ],
     "outDir": "dist",
-    "module": "node16",
-    "target": "es2022",
+    "module": "NodeNext",
+    "target": "es2020",
+    "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "moduleResolution": "node16",
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "NodeNext"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
