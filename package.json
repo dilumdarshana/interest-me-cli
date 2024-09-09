@@ -1,6 +1,6 @@
 {
   "name": "practice-cli",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Calculator for interest for a given amount",
   "keywords": [
     "typescript",
@@ -25,7 +25,7 @@
     "build": "esbuild --bundle src/index.ts --platform=node --outfile=dist/index.js --packages=external",
     "link-cli": "(yarn --global unlink practice-cli || true) && chmod +x ./dist/index.js && yarn --global link practice-cli",
     "dev": "tsc -w",
-    "publish": "np patch"
+    "publish": "np 0.0.4"
   },
   "devDependencies": {
     "@types/figlet": "^1.5.8",
