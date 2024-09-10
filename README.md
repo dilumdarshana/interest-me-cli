@@ -1,5 +1,5 @@
 # CLI Interest Calculator
 
 ```bash
-  npm install @alcorme/practice-cli
+  npm install @alcorme/interestme-cli
 ```
